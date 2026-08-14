@@ -1,0 +1,773 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>한국전력공사</title>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="css/DB_banner10.css" type="text/css"></link>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.DB_slideLogoMove.min.js"></script>
+        <script>
+            $(function(){
+                $(".ev2_1 ul li").eq(0).fadeIn();  
+                setInterval(function(){
+                    $(".ev2_1 ul li").eq(0).fadeOut().appendTo(".ev2_1 ul");  
+                    $(".ev2_1 ul li").eq(0).fadeIn();},1000) 
+            })
+        </script>
+        
+        <link rel="stylesheet" href="css/DB_tab35.css" type="text/css"></link>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script><!--easing-->
+        <script type="text/javascript" src="js/jquery.d_tabMotionWideBanner.min.js"></script>
+
+        <link rel="stylesheet" href="css/DB_etc10.css" type="text/css"></link>
+        <script type="text/javascript" src="js/jquery.DB_springMove.min.js"></script>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <style type="text/css">
+            *{margin: 0; padding: 0; list-style: none;}
+            body{background-color: #1a1a1a;}
+            #wrap{margin: auto; width: 1920px; overflow: hidden;}
+            .nav{margin-top: -4px; width: 1920px; z-index: 9; position: relative;}
+            .nav li{float: left;}
+            .headline{position: relative; z-index: 6;}
+            #logo{width: 154px; height: 45px; margin-top: -4px;}
+            .logo_bottom{float: left; margin-top: -8px;}
+            .navigation{width: 1146px; height: 45px; position: relative; z-index: 9;}
+            .navigation img{float: left;}
+            .visual{width: 1920px;}
+            .visual img,.visual ul{float: left;}
+            .sns{width: 17px; height: 164px; position: relative; z-index: 8;}
+            .lefttitle{width: 335px; height: 151px; position: relative; z-index: 5;}
+            .righttitle{position: relative; z-index: 5;}
+            .lefttitle>li{float: left;}
+            .leftt{width: 253px; height: 97px;}
+            .leftvisual{width: 673px; height: 589px;}
+
+            .nav1:hover,.nav2:hover,.nav3:hover,.nav4:hover,.nav5:hover{border-bottom: 1px solid #f1884d;}
+
+            .mainvisual{position: relative;}
+            .kepco,.titlef,.bead,.smalllight,.titleb,.light,.light2,.beadbg{position: absolute;}
+            .kepco{z-index: 8; top: 359px; left: 131px;}
+            .titlef{z-index: 7; top: 175px; left: 158px;}
+            .bead{top: 134px; left: 155px; z-index: 6;}
+            .smalllight{z-index: 5; top: 110px;}
+            .titleb{z-index: 3; top: 202px; right: -10px;}
+
+            /*빛 깜빡이는 효과 css*/
+            .ev2_1{left: -5px; z-index: 4;}
+            .evp .ev2_1 ul{position:relative;}
+            .ev2_1 ul li{position:absolute;top:-8px; left: 2px;}
+            li.light1_2{position: absolute; left: 3px; z-index: 2;}
+
+            .light2{z-index: 2; top: -95px; right: -213px; }
+            .beadbg{z-index: 1; top: -100px; right: -390px;}
+
+            .leftvisual,.mainvisual,.visual15{float: left; margin-top: -4px;}
+            .visual7{margin-top: -4px;}
+            .visualtab li{float: left;}
+            .visualtab{position: relative; z-index: 4; height: 66px;}
+
+            .cont1{width: 993px; height: 179px; margin: auto; margin-top: 156px;}
+            .cont1 li{float: left; margin-bottom: 196px;}
+            .cont1_1{margin-right: 153px; width: 128px;}
+            .cont1_1>.icon{margin-left: 34px; margin-bottom: 36px;}
+            .cont1_1>.cont{margin-top: 15px;}
+            .cont1_2>.icon{margin-left: 45px; margin-bottom: 37px;}
+            .cont1_2>.title{margin-left: 23px; margin-bottom: 13px;}
+            .cont1_3{margin-left: 152px; margin-right: 152px;}
+            .cont1_3>.icon{margin-left: 43px; margin-bottom: 37px;}
+            .cont1_3>.title{margin-left: 28px; margin-bottom: 14px;}
+            .cont1_4>.icon{margin-left: 25px; margin-bottom: 37px;}
+            .cont1_4>.title{margin-left: 5px; margin-bottom: 14px;}
+            .cont2{margin: auto; width: 1300px; height: 455px;}
+            .cont2_title{margin-bottom: 36px; margin-right: 989px;}
+            .cont2 li{float: left; margin-bottom: 96px;}
+            .cont2_2{margin: 0 92px 0 92px;}
+            .cont3{width: 1920px; margin: auto;}
+            .cont3 img,.cont3 ul,.map{float: left;}
+            .cont3_cont{width: 719px; height: 720px;}
+
+            .maps{position: relative; z-index: 0; top: 476px; left: 719px;}
+            .map{width: 1200px; height: 720px; position: absolute;}
+            .map1,.map2,.map3,.map4,.map5,.map6,.map7,.map8,.map9,.map10,.map11{position: absolute; z-index: 3;}
+            .map1{left: 413px; top: 149px;}
+            .map2{top: 341px; left: 403px;}
+            .map3{top: 490px; left: 295px;}
+            .map4{top: 231px; left: 362px;}
+            .map5{left: 427px; top: 477px;}
+            .map6{left: 600px; top: 550px;}
+            .map7{left: 610px; top: 348px;}
+            .map8{left: 610px; top: 210px;}
+            .map9{left: 539px; top: 183px;}
+            .map10{left: 602px; top: 110px;}
+            .map11{left: 213px; top: 320px;}
+
+            .cont4{clear: both; width: 2580px; margin: auto; margin-bottom: 199px;}
+            .cont4_1,.cont4_2,.cont4_3,.cont4_4{float: left;}
+            .cont4_title{margin-top: 100px; margin-left: 299px; margin-bottom: 40px; margin-right: 2015px;}
+            .cont4_1{margin-left: 299px; width: 296px; height: 528px;}
+            .cont4_1>.cont4_img{margin-bottom: 36px; background-color: #1a1a1a;}
+            .cont4_1>.cont4_cont{margin-bottom: 36px;}
+            .cont4_2{width: 290px; height: 332px; margin-left: 38px; margin-right: 20px;}
+            .cont4_2 img{float: left;}
+            .cont4_3{margin-left: 30px;}
+            .cont4_4,.cont4_5,.cont4_6{float: left;}
+            .cont4_4{padding-left: 50px;}
+            .cont4_5{width: 293px; height: 332px; margin-left: 48px; margin-right: 43px;}
+            .cont4_5 img{float: left;}
+            .cont4_6{width: 289px;}
+            .cont4_6_cont{margin:36px 0 36px 0;}
+
+
+            .cont5{clear: both; width: 1300px; height: 820px; margin: auto;}
+            .cont5_title{margin-bottom: 36px; margin-right: 917px;}
+            .cont5_1,.cont5_2,.cont5_3,.cont5_4,.cont5_5{float: left;}
+            .cont5_1{margin-right: 20px; margin-bottom: 15px;}
+            .cont5_2{margin-bottom: 15px;}
+            .cont5_3{width: 420px; height: 266px;}
+            .cont5_3 img{float: left;}
+            .cont5_345{width: 1300px; height: 266px;}
+            .cont5_4{margin: 0 20px 0 20px;}
+            .cont6{clear: both; width: 1300px; margin: auto;}
+            .cont6_title{margin-top: 196px; margin-bottom: 36px;}
+            .cont6_tab{width: 1300px; height: 18px; margin-bottom: 20px; position: relative; z-index: 3;}
+            .cont6_tab li{float: left; margin-right: 22px;}
+            .cont6 .time{float:right;}
+            .cont6_cont li{float: left; margin-bottom: 196px;}
+            .cont6_1,.cont6_2,.cont6_3{margin-right: 21px;}
+            .day,.view{margin-top: 6px; margin-bottom: 90px;}
+            .cont6 .view{float: right;}
+
+            .footer{width: 1920px; height: 481px; margin: auto; margin-top: -5px;}
+            .footer img,.fnav,.info, .footermenu{float: left;}
+            .fnav1{width: 59px; height: 125px;}
+            .fnav2{width: 81px; height: 125px;}
+            .fnav3{width: 121px; height: 125px;}
+            .fnav4{width: 107px; height: 125px;}
+            .fnav5{width: 76px; height: 125px;}
+            .fnav li{float: left;}
+            .info{width: 330px; height: 125px;}
+            .footer21{margin-top: -40px;}
+            .top{position: fixed; z-index: 15; bottom: 35px; right: 35px;}
+            .dark{position: fixed; z-index: 15; bottom: 95px; right: 35px;}
+            .chatbot{position: fixed; z-index: 15; bottom: 155px; right: 35px;}
+            
+
+            /* 지도 풍선 호버하면 올라가는 효과 css */
+            .map1{
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            }
+            .map1:hover, .map1:focus, .map1:active {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="header">
+                <img class="headline" src="img/visual_1.png">
+                <ul class="nav">
+                    <li><img src="img/visual_2.png">
+                    <li>
+                        <h1 id="logo">
+                        <a href=#><img src="img/logo.png" alt="한국전력공사 로고"></a>
+                        <img class="logo_bottom" src="img/visual_3.png">
+                        </h1>
+                    </li>
+                    <li class="navigation">
+                        <img src="img/visual_4.png">
+                        <img src="img/visual_5.png">
+                        <a href="https://amberjang5.github.io/KEPCO/sub1"><img class="nav1" src="img/nav_1.png" alt="회사소개"></a>
+                        <img src="img/nav_1_1.png">
+                        <a href="https://amberjang5.github.io/KEPCO/sub2"><img class="nav2" src="img/nav_2.png" alt="정보공개"></a>
+                        <img src="img/nav_2_1.png">
+                        <a href="https://amberjang5.github.io/KEPCO/sub3"><img class="nav3" src="img/nav_3.png" alt="비즈니스"></a>
+                        <img src="img/nav_3_1.png">
+                        <a href="https://amberjang5.github.io/KEPCO/sub4"><img class="nav4" src="img/nav_4.png" alt="민원센터"></a>
+                        <img src="img/nav_4_1.png">
+                        <a href="https://amberjang5.github.io/KEPCO/sub5"><img class="nav5" src="img/nav_5.png" alt="홍보센터"></a>
+                        <img src="img/nav_5_1.png">
+                        <div class="lnb">
+                            <a class="find" href="#"><img src="img/lnb_1.png" onmouseover="this.src='img/lnb_1_hover.png'"
+                                onmouseout="this.src='img/lnb_1.png'" alt="돋보기아이콘"/></a>
+                            <img src="img/lnb_1_1.png">
+                            <a class="log" href="#"><img src="img/lnb_2.png" onmouseover="this.src='img/lnb_2_hover.png'"
+                                onmouseout="this.src='img/lnb_2.png'" alt="로그인"/></a>
+                            <img src="img/lnb_2_1.png">
+                            <a class="language" href="#"><img src="img/lnb_3.png" onmouseover="this.src='img/lnb_3_hover.png'"
+                                onmouseout="this.src='img/lnb_3.png'" alt="언어선택"/></a>
+                            <img src="img/lnb_3_1.png">
+                        </div>
+                    </li>
+                    
+                    <li><img src="img/visual_6.png"></li>
+                </div>
+                <img class="visual7" src="img/visual_7.png">
+                <div class="visual">
+                    <div class="leftvisual">
+                        <img src="img/visual_8.png">
+                        <ul class="sns">
+                            <li class="youtube">
+                                <a href="#"><img src="img/sns_1.png" onmouseover="this.src='img/sns_1_hover.png'"
+                                    onmouseout="this.src='img/sns_1.png'" alt="유튜브아이콘"/></a>
+                            </li>
+                            <li><img src="img/sns_1_1.png"></li>
+                            <li class="facebook">
+                                <a href="#"><img src="img/sns_2.png" onmouseover="this.src='img/sns_2_hover.png'"
+                                    onmouseout="this.src='img/sns_2.png'" alt="페이스북아이콘"/></a>
+                            </li>
+                            <li><img src="img/sns_2_1.png"></li>
+                            <li class="instagram">
+                                <a href="#"><img src="img/sns_3.png" onmouseover="this.src='img/sns_3_hover.png'"
+                                    onmouseout="this.src='img/sns_3.png'" alt="인스타그램아이콘"/></a>
+                            </li>
+                            <li><img src="img/sns_3_1.png"></li>
+                            <li class="blog">
+                                <a href="#"><img src="img/sns_4.png" onmouseover="this.src='img/sns_4_hover.png'"
+                                    onmouseout="this.src='img/sns_4.png'" alt="블로그아이콘"/></a>
+                            </li>
+                            <li><img src="img/sns_4_1.png"></li>
+                            <li class="story">
+                                <a href="#"><img src="img/sns_5.png" onmouseover="this.src='img/sns_5_hover.png'"
+                                    onmouseout="this.src='img/sns_5.png'" alt="스토리아이콘"/></a>
+                            </li>
+                        </ul>
+                        <img src="img/visual_9.png">
+                        <ul class="lefttitle">
+                            <li><img src="img/visual_10.png"></li>
+                            <li class="leftt">
+                                <img src="img/left_title.png" alt="믿을 수 있는 에너지">
+                                <img src="img/visual_11.png">
+                            </li>
+                            <li class="lefttbtn">
+                                <a href="#"><img src="img/visual_left_btn.png" onmouseover="this.src='img/visual_left_btn_hover.png'"
+                                    onmouseout="this.src='img/visual_left_btn.png'" alt="자세히보기"/></a>
+                            </li>
+                            <li><img src="img/visual_13.png"></li>
+                            <li><img src="img/visual_14.png"></li>
+                        </ul>
+                        <img src="img/visual_16.png">
+                    </div>
+                    <div class="mainvisual">
+                        <img class="kepco" src="img/KEPCO.png">
+                        <img class="titlef" src="img/bead_title_front.png">
+                        <img class="bead" src="img/bead.png">
+                        <img class="smalllight" src="img/small_lights.png">
+                        <img class="titleb" src="img/bead_title_back.png">
+                        <div class="ev2_1">
+                            <ul>
+                                <li><img src="img/bead_light.png" alt=""></li>
+                                <li class="light1_2"><img src="img/bead_light_1_2.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <img class="light2" src="img/bead_light_2.png"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="200"
+                            data-aos-offset="0">
+                        <img class="beadbg" src="img/bead_bg.png">
+                        <img src="img/mainvisual.png">
+                    </div>
+                    <img class="visual15" src="img/visual_15.png">
+                    <ul class="righttitle">
+                        <li class="rightt">
+                            <img src="img/right_title.png" alt="한국전력공사 KEPCO">
+                        </li>
+                        <li><img src="img/visual_17.png"></li>
+                        <li class="righttbtn">
+                            <a href="#"><img src="img/visual_right_btn.png" onmouseover="this.src='img/visual_right_btn_hover.png'"
+                                onmouseout="this.src='img/visual_right_btn.png'" alt="자세히보기"/></a>
+                        </li>
+                        <li><img src="img/visual_18.png"></li>
+                        <li><img src="img/visual_19.png"></li>
+                    </ul>
+                    <img src="img/visual_20.png">
+                </div>
+                <ul class="visualtab">
+                    <li><img src="img/visual_21.png"></li>
+                    <li class="bottomarrow">
+                        <a href=#><img src="img/bottom_arrow_1.png" alt="밑 화살표"></a>
+                    </li>
+                    <li class="leftarrow">
+                        <a href=#><img src="img/bottom_arrow_2.png" alt="왼쪽화살표"></a>
+                    </li>
+                    <li class="tab1">
+                        <a href="#"><img src="img/bottom_tab_dark_1_hover.png" onmouseover="this.src='img/bottom_tab_dark_1_hover.png'"
+                            onmouseout="this.src='img/bottom_tab_dark_1_hover.png'" alt="reliable energy"/></a>
+                    </li>
+                    <li class="tab2">
+                        <a href="#"><img src="img/bottom_tab_2.png" onmouseover="this.src='img/bottom_tab_dark_2_hover.png'"
+                            onmouseout="this.src='img/bottom_tab_2.png'" alt="smart energy"/></a>
+                    </li>
+                    <li class="tab3">
+                        <a href="#"><img src="img/bottom_tab_3.png" onmouseover="this.src='img/bottom_tab_dark_3_hover.png'"
+                            onmouseout="this.src='img/bottom_tab_3.png'" alt="social value"/></a>
+                    </li>
+                    <li class="tab4">
+                        <a href="#"><img src="img/bottom_tab_4.png" onmouseover="this.src='img/bottom_tab_dark_4_hover.png'"
+                            onmouseout="this.src='img/bottom_tab_4.png'" alt="energy platform"/></a>
+                    </li>
+                    <li class="tab5">
+                        <a href="#"><img src="img/bottom_tab_5.png" onmouseover="this.src='img/bottom_tab_dark_5_hover.png'"
+                            onmouseout="this.src='img/bottom_tab_5.png'" alt="clean energy"/></a>
+                    </li>
+                    <li class="tab6">
+                        <a href="#"><img src="img/bottom_tab_6.png" onmouseover="this.src='img/bottom_tab_dark_6_hover.png'"
+                            onmouseout="this.src='img/bottom_tab_6.png'" alt="love energy"/></a>
+                    </li>
+                    <li class="rightarrow">
+                        <a href=#><img src="img/bottom_arrow_3.png" alt="오른쪽화살표"></a>
+                    </li>
+                    <li class="123">
+                        <img src="img/bottom_123.png" alt="고객센터123">
+                    </li>
+                    <li><img src="img/visual_22.png"></li>
+                </ul>
+            </div>
+            <ul class="cont1">
+                <li class="cont1_1">
+                    <div class="icon">
+                        <img src="img/icon_dark_1.png" alt="지갑아이콘">
+                    </div>
+                    <div class="title">
+                        <a href="#"><img src="img/1_title_dark_1.png" onmouseover="this.src='img/1_title_dark_1_hover.png'"
+                            onmouseout="this.src='img/1_title_dark_1.png'" alt="요금조회 및 납부"/></a>
+                    </div>
+                    <div class="cont">
+                        <img src="img/1_cont_dark_1.png" alt="전기요금을 조회하고 납부할 수 있습니다.">
+                    </div>
+                </li>
+                <li class="cont1_2">
+                    <div class="icon">
+                        <img src="img/icon_dark_2.png" alt="이체아이콘">
+                    </div>
+                    <div class="title">
+                        <a href="#"><img src="img/1_title_dark_2.png" onmouseover="this.src='img/1_title_dark_2_hover.png'"
+                            onmouseout="this.src='img/1_title_dark_2.png'" alt="자동이체신청"/></a>
+                    </div>
+                    <div class="cont">
+                        <img src="img/1_cont_dark_2.png" alt="전기요금납부방식을 자동이체로 변경해보세요.">
+                    </div>
+                </li>
+                <li class="cont1_3">
+                    <div class="icon">
+                        <img src="img/icon_dark_3.png" alt="상담 아이콘">
+                    </div>
+                    <div class="title">
+                        <a href="#"><img src="img/1_title_dark_3.png" onmouseover="this.src='img/1_title_dark_3_hover.png'"
+                            onmouseout="this.src='img/1_title_dark_3.png'" alt="상담 및 신고"/></a>
+                    </div>
+                    <div class="cont">
+                        <img src="img/1_cont_dark_3.png" alt="언제나 열린 귀로 여러분과 소통하겠습니다.">
+                    </div>
+                </li>
+                <li class="cont1_4">
+                    <div class="icon">
+                        <img src="img/icon_dark_4.png" alt="서식 아이콘">
+                    </div>
+                    <div class="title">
+                        <a href="#"><img src="img/1_title_dark_4.png" onmouseover="this.src='img/1_title_dark_4_hover.png'"
+                            onmouseout="this.src='img/1_title_dark_4.png'" alt="서식자료실"/></a>
+                    </div>
+                    <div class="cont">
+                        <img src="img/1_cont_dark_4.png" alt="전기관련 서식을 쉽게 찾아보세요.">
+                    </div>
+                </li>
+            </ul>
+            <ul class="cont2">
+                <img class="cont2_title" src="img/2_title_dark.png" alt="한전이 전해드립니다">
+                <li class="cont2_1">
+                    <a href="#"><img src="img/2_1_dark.png" onmouseover="this.src='img/2_1_dark_hover.png'"
+                        onmouseout="this.src='img/2_1_dark.png'" alt="회사소개"/></a>
+                </li>
+                <li class="cont2_2">
+                    <a href="#"><img src="img/2_2_dark.png" onmouseover="this.src='img/2_2_dark_hover.png'"
+                        onmouseout="this.src='img/2_2_dark.png'" alt="사업분야"/></a>
+                </li>
+                <li class="cont2_3">
+                    <a href="#"><img src="img/2_3_dark.png" onmouseover="this.src='img/2_3_dark_hover.png'"
+                        onmouseout="this.src='img/2_3_dark.png'" alt="고객제안"/></a>
+                </li>
+            </ul>
+            <div class="cont3">
+                <img src="img/3_dark_1.png">
+                <img src="img/3_dark_2.png">
+                <img class="3_title" src="img/3_title_dark.png" alt="전국의 전력정보를 알려드립니다">
+                <img src="img/3_dark_3.png">
+                <img src="img/3_dark_5.png">
+                <ul class="cont3_cont">
+                    <li><img src="img/3_dark_6.png" alt="실시간 전력 수급현황"></li>
+                    <li><img src="img/3_dark_7.png" alt="공급능력"></li>
+                    <li><img src="img/3_dark_8.png" alt="현재부하, 예비력, 예비율"></li>
+                    <li><img src="img/3_dark_9.png" alt="금일최대수요, 역대피크"></li>
+                    <li><img src="img/3_dark_10.png"></li>
+                    <li><a href="#"><img src="img/3_dark_btn.png" onmouseover="this.src='img/3_dark_btn_hover.png'"
+                            onmouseout="this.src='img/3_dark_btn.png'" alt="자세히보기"/></a>
+                        </li>
+                    <li><img src="img/3_dark_11.png"></li>
+                    <li><img src="img/3_dark_12.png"></li>
+                </ul>
+                <div class="maps">
+                    <a class="map1" href="#"><img src="img/map_1.png" alt="서울본부"></a>
+                    <a class="map2" href="#"><img src="img/map_2.png" alt="용산마포"></a>
+                    <a class="map3" href="#"><img src="img/map_3.png" alt="구로금천"></a>
+                    <a class="map4" href="#"><img src="img/map_4.png" alt="서대문은평"></a>
+                    <a class="map5" href="#"><img src="img/map_5.png" alt="관악동작"></a>
+                    <a class="map6" href="#"><img src="img/map_6.png" alt="서초"></a>
+                    <a class="map7" href="#"><img src="img/map_7.png" alt="광진성동"></a>
+                    <a class="map8" href="#"><img src="img/map_8.png" alt="동대문"></a>
+                    <a class="map9" href="#"><img src="img/map_9.png" alt="강북성북"></a>
+                    <a class="map10" href="#"><img src="img/map_10.png" alt="도봉노원"></a>
+                    <a class="map11" href="#"><img src="img/map_11.png" alt="강서양천"></a>
+                    <div class="map"><img src="img/3_dark_13.png" alt="지도이미지"></div>
+                </div>
+            </div>
+            
+            <div id="d_tab35" class="cont4">
+                <img class="cont4_title" src="img/4_dark_title.png" alt="지속가능한 한전의 경영을 만나보세요">
+                <ul class="img">
+                    <li class="l1">
+                        <div class="d_container">
+                            <div class="motion">
+                                <div class="cont41">
+                                    <div class="cont4_1">
+                                        <img class="cont4_img" src="img/4_1.png" alt="사회책임경영이미지">
+                                        <img class="cont4_cont" src="img/4_1_dark_title.png" alt="사회책임경영">
+                                        <a href="#"><img src="img/4_1_dark_btn.png" onmouseover="this.src='img/4_1_dark_btn_hover.png'"
+                                            onmouseout="this.src='img/4_1_dark_btn.png'" alt="자세히보기"/></a>
+                                    </div>
+                                    <div class="cont4_2">
+                                        <img class="cont4_img" src="img/4_2_dark_1.png" alt="윤리경영">
+                                        <img src="img/4_2_dark_2.png">
+                                        <a href="#"><img src="img/4_2_dark_btn.png" onmouseover="this.src='img/4_1_dark_btn_hover.png'"
+                                            onmouseout="this.src='img/4_2_dark_btn.png'" alt="자세히보기"/></a>
+                                        <img src="img/4_2_dark_3.png">
+                                        <img src="img/4_2_dark_4.png">
+                                    </div>
+                                    <div class="cont4_3">
+                                        <a href="#"><img src="img/4_3.png" onmouseover="this.src='img/4_3_1_dark_hover.png'"
+                                            onmouseout="this.src='img/4_3.png'" alt="녹색환경경영"/></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="l2">
+                        <div class="d_container">
+                            <div class="motion">
+                                <div class="cont42">
+                                    <div class="cont4_4">
+                                        <a href="#"><img src="img/4_4.png" onmouseover="this.src='img/4_4_dark_hover.png'"
+                                            onmouseout="this.src='img/4_4.png'" alt="경영공시"/></a>
+                                    </div>
+                                    <div class="cont4_5">
+                                        <img src="img/4_5_1_dark.png">
+                                        <img src="img/4_5_2_dark.png">
+                                        <a href="#"><img src="img/4_2_dark_btn.png" onmouseover="this.src='img/4_1_dark_btn_hover.png'"
+                                            onmouseout="this.src='img/4_2_dark_btn.png'" alt="자세히보기"/></a>
+                                        <img src="img/4_5_3_dark.png">
+                                        <img src="img/4_5_4_dark.png">
+                                    </div>
+                                    <div class="cont4_6">
+                                        <img class="cont4_6_img" src="img/4_6_1.png" alt="행정정보공표이미지">
+                                        <img class="cont4_6_cont" src="img/4_6_2_dark.png">
+                                        <a class="4_6_btn" href="#"><img src="img/4_1_dark_btn.png" onmouseover="this.src='img/4_1_dark_btn_hover.png'"
+                                            onmouseout="this.src='img/4_1_dark_btn.png'" alt="자세히보기"/></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="btn">
+                    <li class="darkbtn"></li>
+                    <li class="darkbtn"></li>
+                </ul>
+                    
+                <div class="arrow next"><img src="img/4_rolling_left_dark.png" alt="����"/></div>
+                <div class="arrow prev"><img src="img/4_rolling_right_dark.png" alt="����"/></div>
+                
+            
+            </div>
+
+            <div class="cont5">
+                <img class="cont5_title" src="img/5_dark_title.png">
+                <div class="cont5_1">
+                    <a href="#"><img src="img/5_1_dark.png" onmouseover="this.src='img/5_1_dark_hover.png'"
+                        onmouseout="this.src='img/5_1_dark.png'" alt="공지사항"/></a>
+                </div>
+                <div class="cont5_2">
+                    <a href="#"><img src="img/5_2_dark.png" onmouseover="this.src='img/5_2_dark_hover.png'"
+                        onmouseout="this.src='img/5_2_dark.png'" alt="보도자료"/></a>
+                </div>
+                <div class="cont5_345">
+                    <div class="cont5_3">
+                        <img src="img/5_3_dark_1.png" alt="한전신청서비스">
+                        <img src="img/5_3_dark_2.png">
+                        <a href="#"><img class="cont3_btn1" src="img/5_3_dark_3.png" onmouseover="this.src='img/5_3_dark_3_hover.png'"
+                            onmouseout="this.src='img/5_3_dark_3.png'" alt="방문민원"/></a>
+                        <img src="img/5_3_dark_4.png">
+                        <a href="#"><img class="cont3_btn2" src="img/5_3_dark_5.png" onmouseover="this.src='img/5_3_dark_5_hover.png'"
+                            onmouseout="this.src='img/5_3_dark_5.png'" alt="서면민원"/></a>
+                        <img src="img/5_3_dark_6.png">
+                        <img src="img/5_3_dark_7.png">
+                        <img src="img/5_3_dark_8.png">
+                        <a href="#"><img class="cont3_btn3" src="img/5_3_dark_9.png" onmouseover="this.src='img/5_3_dark_9_hover.png'"
+                            onmouseout="this.src='img/5_3_dark_9.png'" alt="신문고"/></a>
+                        <img src="img/5_3_dark_10.png">
+                        <a href="#"><img class="cont3_btn4" src="img/5_3_dark_11.png" onmouseover="this.src='img/5_3_dark_11_hover.png'"
+                            onmouseout="this.src='img/5_3_dark_11.png'" alt="적극업무국민신청"/></a>
+                        <img src="img/5_3_dark_12.png">
+                        <img src="img/5_3_dark_13.png">
+                    </div>
+                    <div class="cont5_4">
+                        <a href="#"><img src="img/5_4_dark.png" onmouseover="this.src='img/5_4_dark_hover.png'"
+                            onmouseout="this.src='img/5_4_dark.png'" alt="채용공고"/></a>
+                    </div>
+                    <div class="cont5_5">
+                        <a href="#"><img src="img/5_5_dark.png" onmouseover="this.src='img/5_5_dark_hover.png'"
+                            onmouseout="this.src='img/5_5_dark.png'" alt="2023BIXPO"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont6">
+                <img class="cont6_title" src="img/6_dark_title.png">
+                <ul class="cont6_tab">
+                    <li class="cont6_tab_1">
+                        <a href=#><img src="img/6_tab_dark_1.png" alt="전체"></a>
+                    </li>
+                    <li class="cont6_tab_2">
+                        <a href="#"><img src="img/6_tab_dark_2.png" onmouseover="this.src='img/6_tab_dark_2_hover.png'"
+                            onmouseout="this.src='img/6_tab_dark_2.png'" alt="유튜브"/></a>
+                    </li>
+                    <li class="cont6_tab_3">
+                        <a href="#"><img src="img/6_tab_dark_3.png" onmouseover="this.src='img/6_tab_dark_3_hover.png'"
+                            onmouseout="this.src='img/6_tab_dark_3.png'" alt="인스타그램"/></a>
+                    </li>
+                    <li class="cont6_tab_4">
+                        <a href="#"><img src="img/6_tab_dark_4.png" onmouseover="this.src='img/6_tab_dark_4_hover.png'"
+                            onmouseout="this.src='img/6_tab_dark_4.png'" alt="페이스북"/></a>
+                    </li>
+                    <li class="cont6_tab_5">
+                        <a href="#"><img src="img/6_tab_dark_5.png" onmouseover="this.src='img/6_tab_dark_5_hover.png'"
+                            onmouseout="this.src='img/6_tab_dark_5.png'" alt="네이버블로그"/></a>
+                    </li>
+                    <li class="cont6_tab_6">
+                        <a href="#"><img src="img/6_tab_dark_6.png" onmouseover="this.src='img/6_tab_dark_6_hover.png'"
+                            onmouseout="this.src='img/6_tab_dark_6.png'" alt="카카오스토리"/></a>
+                    </li>
+                    <a href=#><img class="time" src="img/6_tab_dark_7.png"></a>
+                </ul>
+                
+                <ul class="cont6_cont">
+                    <li class="cont6_1">
+                        <a href="#"><img class="video" src="img/6_1_dark.png" onmouseover="this.src='img/6_1_dark_hover.png'"
+                            onmouseout="this.src='img/6_1_dark.png'" alt="한전서울본부"/></a>
+                        <div>
+                            <img class="day" src="img/6_1_dark_1.png" alt="2022.12.14">
+                            <img class="view" src="img/6_1_dark_2.png" alt="1.1k">
+                        </div>
+                    </li>
+                    <li class="cont6_2">
+                        <a href="#"><img class="video" src="img/6_2_dark.png" onmouseover="this.src='img/6_2_dark_hover.png'"
+                            onmouseout="this.src='img/6_2_dark.png'" alt="수소의 모든 것!"/></a>
+                        <div>
+                            <img class="day" src="img/6_2_dark_1.png" alt="2022.12.01">
+                            <img class="view" src="img/6_2_dark_2.png" alt="1.5m">
+                        </div>
+                    </li>
+                    <li class="cont6_3">
+                        <a href="#"><img class="video" src="img/6_3_dark.png" onmouseover="this.src='img/6_3_dark_hover.png'"
+                            onmouseout="this.src='img/6_3_dark.png'" alt="전기요금 이것이 문제다!"/></a>
+                        <div>
+                            <img class="day" src="img/6_3_dark_1.png" alt="2022.06.27">
+                            <img class="view" src="img/6_3_dark_2.png" alt="2.2m">
+                        </div>
+                    </li>
+                    <li class="cont6_4">
+                        <a href="#"><img class="video" src="img/6_4_dark.png" onmouseover="this.src='img/6_4_dark_hover.png'"
+                            onmouseout="this.src='img/6_4_dark.png'" alt="차량인포테인먼트솔루션개발기업TBU"/></a>
+                        <div>
+                            <img class="day" src="img/6_4_dark_1.png" alt="2022.12.21">
+                            <img class="view" src="img/6_4_dark_2.png" alt="1.0k">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="brandbg">
+                <div id="DB_banner10">
+                    <div class="DB_mask">
+                        <ul class="DB_imgSet">
+                            <li><a href="#"><img src="img/brand_1_dark.png" alt=""/></a></li>
+                            <li><a href="#"><img src="img/brand_2_dark.png" alt=""/></a></li>
+                            <li><a href="#"><img src="img/brand_3_dark.png" alt=""/></a></li>
+                            <li><a href="#"><img src="img/brand_4_dark.png" alt=""/></a></li>
+                            <li><a href="#"><img src="img/brand_5_dark.png" alt=""/></a></li>
+                            <li><a href="#"><img src="img/brand_6_dark.png" alt=""/></a></li>
+                            <li><a href="#"><img src="img/brand_7_dark.png" alt=""/></a></li>
+                            <li><a href="#"><img src="img/brand_8_dark.png" alt=""/></a></li>
+                        </ul>
+                    </div>
+                    <span class="DB_dir DB_prev"><img src="img/prevBtn.gif" alt=""/></span>
+                    <span class="DB_dir DB_next"><img src="img/nextBtn.gif" alt=""/></span>
+                    <div class="bg_dark"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <img src="img/footer_dark_1.png">
+                <ul class="fnav">
+                    <li><img src="img/footer_dark_2.png"></li>
+                    <li class="fnav1">
+                        <a href="http://portfoliojhy.dothome.co.kr/web/sub1.html"><img class="fnav1_title" src="img/footer_dark_3_1.png" alt="회사소개"></a>
+                        <img src="img/footer_dark_3_2.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub1.html><img class="fnav1_1" src="img/footer_dark_3_3.png" alt="한전소개"></a>
+                        <img src="img/footer_dark_3_4.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub1.html><img class="fnav1_2" src="img/footer_dark_3_5.png" alt="한전연혁"></a>
+                        <img src="img/footer_dark_3_6.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub1.html><img class="fnav1_3" src="img/footer_dark_3_7.png" alt="사업소개"></a>
+                        <img src="img/footer_dark_3_8.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub1.html><img class="fnav1_4" src="img/footer_dark_3_9.png" alt="인재채용"></a>
+                    </li>
+                    <li><img src="img/footer_dark_4.png"></li>
+                    <li class="fnav2">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub2.html><img class="fnav2_title" src="img/footer_dark_5_1.png" alt="정보공개"></a>
+                        <img src="img/footer_dark_5_2.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub2.html><img class="fnav2_1" src="img/footer_dark_5_3.png" alt="정보공개제도"></a>
+                        <img src="img/footer_dark_5_4.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub2.html><img class="fnav2_2" src="img/footer_dark_5_5.png" alt="사전정보공표"></a>
+                        <img src="img/footer_dark_5_6.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub2.html><img class="fnav2_3" src="img/footer_dark_5_7.png" alt="IR정보"></a>
+                        <img src="img/footer_dark_5_8.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub2.html><img class="fnav2_4" src="img/footer_dark_5_9.png" alt="투자정보"></a>
+                    </li>
+                    <li><img src="img/footer_dark_6.png"></li>
+                    <li class="fnav3">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub3.html><img class="fnav3_title" src="img/footer_dark_7_1.png" alt="비즈니스"></a>
+                        <img src="img/footer_dark_7_2.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub3.html><img class="fnav3_1" src="img/footer_dark_7_3.png" alt="에너지마켓플레이스"></a>
+                        <img src="img/footer_dark_7_4.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub3.html><img class="fnav3_2" src="img/footer_dark_7_5.png" alt="ESG경영"></a>
+                        <img src="img/footer_dark_7_6.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub3.html><img class="fnav3_3" src="img/footer_dark_7_7.png" alt="중소기업동반성장"></a>
+                        <img src="img/footer_dark_7_8.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub3.html><img class="fnav3_4" src="img/footer_dark_7_9.png" alt="KEPCO연구소"></a>
+                    </li>
+                    <li><img src="img/footer_dark_8.png"></li>
+                    <li class="fnav4">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub4.html><img class="fnav4_title" src="img/footer_dark_9_1.png" alt="민원센터"></a>
+                        <img src="img/footer_dark_9_2.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub4.html><img class="fnav4_1" src="img/footer_dark_9_3.png" alt="한전에바란다"></a>
+                        <img src="img/footer_dark_9_4.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub4.html><img class="fnav4_2" src="img/footer_dark_9_5.png" alt="민원접수"></a>
+                        <img src="img/footer_dark_9_6.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub4.html><img class="fnav4_3" src="img/footer_dark_9_7.png" alt="자주하는질문"></a>
+                        <img src="img/footer_dark_9_8.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub4.html><img class="fnav4_4" src="img/footer_dark_9_9.png" alt="적극업무국민신청"></a>
+                    </li>
+                    <li><img src="img/footer_dark_10.png"></li>
+                    <li class="fnav5">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub5.html><img class="fnav5_title" src="img/footer_dark_11_1.png" alt="홍보센터"></a>
+                        <img src="img/footer_dark_11_2.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub5.html><img class="fnav5_1" src="img/footer_dark_11_3.png" alt="전기요금"></a>
+                        <img src="img/footer_dark_11_4.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub5.html><img class="fnav5_2" src="img/footer_dark_11_5.png" alt="공모전"></a>
+                        <img src="img/footer_dark_11_6.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub5.html><img class="fnav5_3" src="img/footer_dark_11_7.png" alt="BIXPO"></a>
+                        <img src="img/footer_dark_11_8.png">
+                        <a href=http://portfoliojhy.dothome.co.kr/web/sub5.html><img class="fnav5_4" src="img/footer_dark_11_9.png" alt="문화스포츠"></a>
+                    </li>
+                    <li>
+                        <img src="img/footer_dark_12.png">
+                    </li>
+                    <li class="info">
+                        <img src="img/footer_dark_13_1.png" alt="58322 전라남도 나주시 전력로 55">
+                        <a href="#"><img src="img/footer_dark_13_btn.png" onmouseover="this.src='img/footer_dark_13_btn_hover.png'"
+                            onmouseout="this.src='img/footer_dark_13_btn.png'" alt="관련사이트 바로가기"/></a>
+                        <img src="img/footer_dark_13_2.png">
+                        <img src="img/footer_dark_13_3.png">
+                        <img src="img/footer_dark_13_4.png">
+                    </li>
+                    <li><img src="img/footer_dark_14.png"></li>
+                </ul>
+                <div>
+                    <img src="img/footer_dark_15.png">
+                    <img src="img/footer_dark_16.png" alt="Copyright@2019 KEPO. All Rights Reserved.">
+                    <img src="img/footer_dark_17.png">
+                </div>
+                <div class="footerbottom">
+                    <img src="img/footer_dark_18.png">
+                    <div>
+                        <img src="img/footer_dark_20_0.png">
+                        <ul class="footermenu">
+                            <li class="footerlogo">
+                                <a href=#><img src="img/footer_dark_logo_2.png" alt="한국전력공사로고"></a>
+                            </li>
+                            <li><img src="img/footer_dark_20_1.png"></li>
+                            <li><a href=#><img src="img/footer_dark_20_2.png" alt="개인정보처리방침"></a></li>
+                            <li><img src="img/footer_dark_20_3.png"></li>
+                            <li><a href=#><img src="img/footer_dark_20_4.png" alt="영상정보처리기기운영관리방침"></a></li>
+                            <li><img src="img/footer_dark_20_5.png"></li>
+                            <li><a href=#><img src="img/footer_dark_20_6.png" alt="개인정보침해신고"></a></li>
+                            <li><img src="img/footer_dark_20_7.png"></li>
+                            <li><a href=#><img src="img/footer_dark_20_8.png" alt="신용정보활용제재공시"></a></li>
+                            <li><img src="img/footer_dark_20_9.png"></li>
+                            <li><a href=#><img src="img/footer_dark_20_10.png" alt="이메일주소무단수집금지"></a></li>
+                            <li><img src="img/footer_dark_20_11.png"></li>
+                            <li><a href=#><img src="img/footer_dark_20_12.png" alt="시스템장애문의"></a></li>
+                            <li><img src="img/footer_dark_20_13.png"></li>
+                            <li><img src="img/footer_dark_20_14.png"></li>
+                        </ul>
+                    </div>
+                    <img class="footer21" src="img/footer_dark_21.png">
+                </div>
+                <div class="rnb">
+                    <a class="top" href="#"><img src="img/top.png" onmouseover="this.src='img/top_hover.png'"
+                        onmouseout="this.src='img/top.png'" alt="탑버튼"/></a>
+                    <a class="dark" href="https://amberjang5.github.io/KEPCO"><img src="img/lightmode.png" onmouseover="this.src='img/lightmode_hover.png'"
+                        onmouseout="this.src='img/lightmode.png'" alt="다크모드버튼"/></a>
+                    <a class="chatbot" href="#"><img src="img/chatbot.png" onmouseover="this.src='img/chatbot_hover.png'"
+                        onmouseout="this.src='img/chatbot.png'" alt="챗봇버튼"/></a>
+                </div>
+            </div>
+            <!--밑은 4단롤링배너와 7단 브랜드 롤링 자바스크립트, 그리고 메인비주얼 작은 반짝이 위 아래로 움직이는 효과입니다!-->
+        </div>
+        <script type="text/javascript">
+            $('#d_tab35').d_tabMotionWideBanner({
+                motionSpeed:1000,                 //�̵��ӵ�
+                motionDelay:300,                  //��ǵ�����(�ؽ�Ʈ�� ����� �ð��� �̵�)
+                autoRollingTime:5000             //�ڵ��Ѹ��ӵ�(1000 = 1��)			
+            })
+
+            $('#DB_banner10').DB_slideLogoMove({
+                key:'b28551',                   //���̼���Ű
+                moveSpeed:20,             //�̵��ӵ�(�и���)
+                overMoveSpeed:15,         //��ư�����ӵ�
+                dir:'left',               //����('left','right')
+                overAlpha:0.6             //������ ���İ�(0~1)
+            });
+
+            $('.smalllight').DB_springMove({
+            key:'c37080',                //���̼���Ű
+            dir:'y',               //������('x','y')
+            mirror:1,              //�ݴ�����̵�(1,-1)
+            radius:10,             //�ݰ�
+            motionSpeed:0.03       //�ӵ�(0~1)
+            })
+
+            AOS.init();
+        </script>
+    </body>
