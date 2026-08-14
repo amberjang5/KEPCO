@@ -1,0 +1,14 @@
+#DB_banner10 *{list-style:none;padding:0;margin:0;border:0; margin: auto;}
+#DB_banner10 {position:relative; width:1300px; height: 90px; top: -64px; z-index:-2;}
+#DB_banner10 .DB_mask{height:38px; width:1300px; margin-left: 310px; position:relative;overflow:hidden;}
+#DB_banner10 ul{white-space:nowrap;font-size:0;}
+#DB_banner10 ul li{display:inline; margin-right: 57px;}
+#DB_banner10 ul li a{padding:10px 10px;}
+#DB_banner10 ul li a img{vertical-align:middle;}
+#DB_banner10 .DB_prev{position:absolute;top:5px;left:-20px;}
+#DB_banner10 .DB_next{position:absolute;top:5px;right:-20px;}
+.brandbg{width: 1920px; margin: auto;}
+.brandbg .bg{background: #d9d9d9; width: 1920px; height: 90px;
+            position: absolute; z-index: -5; top: 459px;}
+.brandbg .bg_dark{background: #2a2a2a; width: 1920px; height: 90px;
+             position: absolute; z-index: -5; top: 459px;}
